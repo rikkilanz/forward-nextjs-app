@@ -13,7 +13,7 @@ export default function Home() {
           <Link href="/">Sign Up</Link>
         </div>
         <div> 
-          <Image/>
+          <Image />
         </div>
       </div>
 
