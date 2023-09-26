@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import heroImage from '../images/hero-banner.jpg'
 import Link from 'next/link'
+import { prefix } from '@/public/prefix'
 
 export default function Home() {
   return (
