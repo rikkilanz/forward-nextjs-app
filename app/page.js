@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import heroImage from '../images/hero-banner.jpg'
+import { forwardHeroBanner } from './assets/images'
 import Link from 'next/link'
 import { prefix } from '@/public/prefix'
 
@@ -44,7 +44,7 @@ export default function Home() {
           <Image
             width={700}
             height={700}
-            src={heroImage}
+            src={forwardHeroBanner}
           />
         </div>
 
