@@ -69,20 +69,26 @@ export default function Home() {
       </div>
 
       <div className='flex items-center justify-center p-10'>
-        <div className='p-10'>
-          <Image src={blocks}/>
+
+        <div className='p-10 flex flex-col justify-center items-center'>
+          <Image className="pb-4" src={blocks}/>
           <h2>Browse our list of local expert mentors within your community and receive guidance</h2>
         </div>
 
-        <div className='p-10'>
-          <Image src={faq} />
-          <h2>Don't know where to start? Take our survey to get matched with local mentors to help kickstart your journey!</h2>
+        <div className='p-10 flex flex-col justify-center items-center'>
+          <div className=''>
+            <Image className="pb-4" src={faq} />
+          </div>
+          <div className=''>
+            <h2 className=''>Don't know where to start? Take our survey to get matched with local mentors to help kickstart your journey!</h2>
+          </div>
         </div>
 
-        <div className='p-10'>
-          <Image src={feedback}/>
+        <div className='p-10 flex flex-col justify-center items-center'>
+          <Image className="pb-4" src={feedback}/>
           <h2>Post your best work on our project showcase to get feedback and connect with fellow peers and mentors</h2>
         </div>
+        
       </div>
       {/* END GET STARTED SECTION */}
 
