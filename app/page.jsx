@@ -3,7 +3,9 @@ import heroImage from '../assets/hero-banner.jpg'
 import blocks from '../assets/clarity-blocks.svg'
 import faq from '../assets/clarity-faq.svg'
 import feedback from '../assets/clarity-feedback.svg'
+import { forwardHeroBanner } from './assets/images'
 import Link from 'next/link'
+import { prefix } from '@/public/prefix'
 
 export default function Home() {
   return (
@@ -52,7 +54,7 @@ export default function Home() {
           <Image
             width={700}
             height={700}
-            src={heroImage}
+            src={forwardHeroBanner}
           />
         </div>
 
