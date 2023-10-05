@@ -82,7 +82,7 @@ export default function Home() {
             <Image className="pb-4" src={faq} />
           </div>
           <div className="">
-            <h2 className="">Don't know where to start? Take our survey to get matched with local mentors to help kickstart your journey!</h2>
+            <h2 className="">Dont know where to start? Take our survey to get matched with local mentors to help kickstart your journey!</h2>
           </div>
         </div>
 
