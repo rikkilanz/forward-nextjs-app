@@ -109,7 +109,7 @@ export default function Home() {
               src={quote}
               className="w-10"
             />
-            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
+            <p className="mt-5">I love f mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
           </div>
           <div className="p-10">
             <Image />
