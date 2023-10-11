@@ -3,8 +3,9 @@ import heroImage from "../assets/hero-banner.jpg"
 import blocks from "../assets/clarity-blocks.svg"
 import faq from "../assets/clarity-faq.svg"
 import feedback from "../assets/clarity-feedback.svg"
-import { forwardHeroBanner } from "./assets/images"
+import quote from "../assets/clarity-quote.svg"
 import Link from "next/link"
+import { forwardHeroBanner } from "./assets/images"
 import { prefix } from "@/public/prefix"
 
 export default function Home() {
@@ -64,9 +65,8 @@ export default function Home() {
     </div>
     {/* END HERO SECTION */}
 
-    {/* GET STARTED SECTION */}
-
-      <div className="p-10 text-5xl font-bold">
+    {/* START GET STARTED SECTION */}
+      <div className="p-10 text-4xl font-bold">
         <h1>Get Started With Forward</h1>
       </div>
 
@@ -93,6 +93,69 @@ export default function Home() {
         
       </div>
       {/* END GET STARTED SECTION */}
+
+
+      {/* START TESTIMONIAL SECTION */}
+      <div className="p-10 text-4xl font-bold">
+        <h1>Here's what our users have to say about us</h1>
+      </div>
+      
+      {/* START TESTIMONIAL CARDS */}
+      <div className="flex flex-row items-center justify-center">
+        {/* START TESTIMONIAL CARD 1 */}
+        <div className="flex flex-col">
+          <div className="w-[360px] p-10">
+            <Image 
+              src={quote}
+              className="w-10"
+            />
+            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
+          </div>
+          <div className="p-10">
+            <Image />
+            <h3>Rachel Garcia</h3>
+            <p>Mentor</p>
+          </div>
+        </div>
+        {/* END TESTIMONIAL CARD 1 */}
+
+        {/* START TESTIMONIAL CARD 2 */}
+        <div className="flex flex-col">
+          <div className="w-[364px] p-10">
+            <Image 
+              src={quote}
+              className="w-10"
+            />
+            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
+          </div>
+          <div className="p-10">
+            <Image />
+            <h3>Benjamin Moreno</h3>
+            <p>Mentor</p>
+          </div>
+        </div>
+        {/* END TESTIMONIAL CARD 2 */}
+
+        {/* START TESTIMONIAL CARD 3 */}
+        <div className="flex flex-col">
+          <div className="w-[364px] p-10">
+            <Image 
+              src={quote}
+              className="w-10"
+            />
+            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
+          </div>
+          <div className="p-10">
+            <Image />
+            <h3>Elijah Kingston</h3>
+            <p>Mentor</p>
+          </div>
+        </div>
+        {/* END TESTIMONIAL CARD 3 */}
+
+      </div>
+      {/* END TESTIMONIAL SECTION */}
+
 
     </main>
   )       
