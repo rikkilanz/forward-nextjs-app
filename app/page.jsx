@@ -4,6 +4,9 @@ import blocks from "../assets/clarity-blocks.svg"
 import faq from "../assets/clarity-faq.svg"
 import feedback from "../assets/clarity-feedback.svg"
 import quote from "../assets/clarity-quote.svg"
+import rachel from "../assets/rachel-garcia.jpg"
+import eli from "../assets/eli-kingston.jpg"
+import ben from "../assets/ben-moreno.jpg"
 import Link from "next/link"
 import { forwardHeroBanner } from "./assets/images"
 import { prefix } from "@/public/prefix"
@@ -109,10 +112,13 @@ export default function Home() {
               src={quote}
               className="w-10"
             />
-            <p className="mt-5">I love f mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
+            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
           </div>
           <div className="p-10">
-            <Image />
+            <Image 
+              className="w-16"
+              src={rachel}
+            />
             <h3>Rachel Garcia</h3>
             <p>Mentor</p>
           </div>
@@ -129,7 +135,10 @@ export default function Home() {
             <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
           </div>
           <div className="p-10">
-            <Image />
+            <Image 
+              className="w-16"
+              src={ben}
+            />
             <h3>Benjamin Moreno</h3>
             <p>Mentor</p>
           </div>
@@ -146,7 +155,10 @@ export default function Home() {
             <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
           </div>
           <div className="p-10">
-            <Image />
+            <Image 
+              className="w-16"
+              src={eli}
+            />
             <h3>Elijah Kingston</h3>
             <p>Mentor</p>
           </div>
