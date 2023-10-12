@@ -1,12 +1,10 @@
 import Image from "next/image"
-import heroImage from "../assets/hero-banner.jpg"
 import blocks from "../assets/clarity-blocks.svg"
 import faq from "../assets/clarity-faq.svg"
 import feedback from "../assets/clarity-feedback.svg"
 import quote from "../assets/clarity-quote.svg"
 import Link from "next/link"
 import { forwardHeroBanner } from "./assets/images"
-import { prefix } from "@/public/prefix"
 
 export default function Home() {
   return (

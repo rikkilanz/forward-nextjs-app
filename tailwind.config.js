@@ -17,7 +17,10 @@ module.exports = {
           DEFAULT: "#00A676",
         },
         black: "#191919"
-      }
+      },
+      fontFamily: {
+        'outfit': ['Outfit', 'sans-serif']
+      },
     },
   },
   plugins: [],
