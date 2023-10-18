@@ -1,15 +1,9 @@
 import Image from "next/image"
-import heroImage from "../assets/hero-banner.jpg"
-import blocks from "../assets/clarity-blocks.svg"
-import faq from "../assets/clarity-faq.svg"
-import feedback from "../assets/clarity-feedback.svg"
-import quote from "../assets/clarity-quote.svg"
-import rachel from "../assets/rachel-garcia.jpg"
-import eli from "../assets/eli-kingston.jpg"
-import ben from "../assets/ben-moreno.jpg"
 import Link from "next/link"
-import { forwardHeroBanner } from "./assets/images"
+import { forwardHeroBanner, iconClarityBlock, iconClarityFaq, iconClarityFeedback, iconClarityQuote, testimonialBenMoreno, testimonialEliKingston, testimonialRachelGarcia } from "./assets/images"
 import { prefix } from "@/public/prefix"
+import TestimonialCard from "./components/TestimonialCard";
+import { testimonials } from "./constants/testimonials";
 
 export default function Home() {
   return (
@@ -76,13 +70,13 @@ export default function Home() {
       <div className="flex items-center justify-center p-10">
 
         <div className="p-10 flex flex-col justify-center items-center">
-          <Image className="pb-4" src={blocks}/>
+          <Image className="pb-4" src={iconClarityBlock}/>
           <h2>Browse our list of local expert mentors within your community and receive guidance</h2>
         </div>
 
         <div className="p-10 flex flex-col justify-center items-center">
           <div className="">
-            <Image className="pb-4" src={faq} />
+            <Image className="pb-4" src={iconClarityFaq} />
           </div>
           <div className="">
             <h2 className="">Dont know where to start? Take our survey to get matched with local mentors to help kickstart your journey!</h2>
@@ -90,7 +84,7 @@ export default function Home() {
         </div>
 
         <div className="p-10 flex flex-col justify-center items-center">
-          <Image className="pb-4" src={feedback}/>
+          <Image className="pb-4" src={iconClarityFeedback}/>
           <h2>Post your best work on our project showcase to get feedback and connect with fellow peers and mentors</h2>
         </div>
         
@@ -105,65 +99,17 @@ export default function Home() {
       
       {/* START TESTIMONIAL CARDS */}
       <div className="flex flex-row items-center justify-center">
-        {/* START TESTIMONIAL CARD 1 */}
-        <div className="flex flex-col">
-          <div className="w-[360px] p-10">
-            <Image 
-              src={quote}
-              className="w-10"
-            />
-            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
-          </div>
-          <div className="p-10">
-            <Image 
-              className="w-16"
-              src={rachel}
-            />
-            <h3>Rachel Garcia</h3>
-            <p>Mentor</p>
-          </div>
-        </div>
-        {/* END TESTIMONIAL CARD 1 */}
 
-        {/* START TESTIMONIAL CARD 2 */}
-        <div className="flex flex-col">
-          <div className="w-[364px] p-10">
-            <Image 
-              src={quote}
-              className="w-10"
-            />
-            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
-          </div>
-          <div className="p-10">
-            <Image 
-              className="w-16"
-              src={ben}
-            />
-            <h3>Benjamin Moreno</h3>
-            <p>Mentor</p>
-          </div>
-        </div>
-        {/* END TESTIMONIAL CARD 2 */}
-
-        {/* START TESTIMONIAL CARD 3 */}
-        <div className="flex flex-col">
-          <div className="w-[364px] p-10">
-            <Image 
-              src={quote}
-              className="w-10"
-            />
-            <p className="mt-5">I love mentoring because it feels amazing to see my mentees succeed. I was thrilled to be able to mentor a young coder through this mentorship program. It was an incredibly rewarding experience to be able to share my knowledge and expertise with someone who was just starting out in the field.</p>
-          </div>
-          <div className="p-10">
-            <Image 
-              className="w-16"
-              src={eli}
-            />
-            <h3>Elijah Kingston</h3>
-            <p>Mentor</p>
-          </div>
-        </div>
-        {/* END TESTIMONIAL CARD 3 */}
+        {
+          testimonials.map((data) => {
+            return (
+              <TestimonialCard
+                key={data.id}
+                testimonialData={data}
+              />
+            )
+          })
+        }
 
       </div>
       {/* END TESTIMONIAL SECTION */}
